@@ -1,0 +1,316 @@
+div#da-wrapper {
+    height: auto;
+    min-height: 100%;
+    position: relative;
+    min-width: 320px
+}
+
+div#da-wrapper, div#da-wrapper.fluid {
+    width: 100%
+}
+
+div#da-wrapper .da-container, div#da-wrapper.fluid .da-container {
+    width: 96%;
+    margin: auto
+}
+
+div#da-wrapper.fixed {
+    min-width: 960px
+}
+
+div#da-wrapper.fixed .da-container {
+    width: 960px
+}
+
+
+div#da-content {
+    clear: both;
+    padding-bottom: 58px
+}
+
+
+
+div#da-wrapper.fixed #da-sidebar-separator {
+    left: 50%;
+    margin-left: -300px
+}
+
+div#da-content #da-sidebar {
+    position: relative;
+    float: left;
+    z-index: 150
+}
+
+div#da-content #da-sidebar .da-button-container {
+    padding: 2px;
+    margin-bottom: 6px;
+    border: 1px solid #cacaca;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 1);
+    -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 1);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 1);
+    background-color: #fff;
+    background-image: linear-gradient(bottom, #fff 0, #f1f1f1 100%);
+    background-image: -o-linear-gradient(bottom, #fff 0, #f1f1f1 100%);
+    background-image: -moz-linear-gradient(bottom, #fff 0, #f1f1f1 100%);
+    background-image: -webkit-linear-gradient(bottom, #fff 0, #f1f1f1 100%);
+    background-image: -ms-linear-gradient(bottom, #fff 0, #f1f1f1 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #fff), color-stop(1, #f1f1f1))
+}
+
+div#da-content #da-sidebar #da-main-nav.da-button-container {
+    width: 174px
+}
+
+div#da-content #da-main-nav ul, div#da-content #da-main-nav ul li {
+    margin: 0;
+    list-style: none
+}
+
+div#da-content #da-main-nav ul {
+    border: 1px solid #cacaca;
+    background: #fff;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px
+}
+
+div#da-content #da-main-nav ul li {
+    display: block;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #cacaca;
+    background-color: #fdfdfd;
+    -webkit-box-shadow: inset 0 0 2px rgba(255, 255, 255, 1);
+    -o-box-shadow: inset 0 0 2px rgba(255, 255, 255, 1);
+    -moz-box-shadow: inset 0 0 2px rgba(255, 255, 255, 1);
+    box-shadow: inset 0 0 2px rgba(255, 255, 255, 1)
+}
+
+div#da-content #da-main-nav ul li:first-child {
+    border-top: 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    -o-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0
+}
+
+div#da-content #da-main-nav ul li:last-child {
+    border-bottom: 0;
+    -webkit-border-radius: 0 0 4px 4px;
+    -o-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px
+}
+
+
+div#da-content #da-main-nav ul li span.da-nav-count {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -1px;
+    background: 0;
+    margin: 0;
+    font-size: 10px;
+    line-height: 1;
+    z-index: 100;
+    text-align: center;
+    background: #f0f0f0;
+    border: 1px solid #bbb;
+    min-width: 10px;
+    padding: 2px 4px;
+    border-left: 0;
+    border-top: 0;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.25);
+    -o-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.25);
+    -webkit-border-radius: 0 0 2px 0;
+    -moz-border-radius: 0 0 2px 0;
+    -o-border-radius: 0 0 2px 0;
+    border-radius: 0 0 2px 0
+}
+
+div#da-content #da-main-nav ul li span.da-nav-icon {
+    padding: 0;
+    margin: 0;
+    width: 32px;
+    height: 32px;
+    background: none !important;
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    margin-top: -16px
+}
+
+div#da-content #da-main-nav ul li span.da-nav-icon img {
+    max-width: 24px;
+    max-height: 24px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -12px;
+    margin-top: -12px
+}
+
+
+
+div#da-content #da-main-nav ul li ul.closed {
+    display: none
+}
+
+div#da-content #da-main-nav ul li ul li {
+    border: 0;
+    background: 0;
+    font-size: 12px;
+    -webkit-box-shadow: none;
+    -o-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none
+}
+
+
+
+div#da-content #da-main-nav ul li ul li a, div#da-content #da-main-nav ul li ul li span {
+    padding: 6px 0;
+    padding-left: 48px;
+    background: none !important
+}
+
+div#da-content #da-content-wrap {
+    margin-left: 230px;
+    padding-bottom: 20px;
+    margin-top: 20px
+}
+
+div#da-content #da-content-wrap #da-content-area {
+    float: left;
+    width: 100%;
+    display: block
+}
+
+
+div#da-error-wrapper {
+    width: 320px;
+    padding: 30px 0;
+    margin: auto;
+    position: relative
+}
+
+div#da-error-wrapper .da-error-heading {
+    color: #e15656;
+    text-align: center;
+    font-size: 24px;
+    font-family: Georgia, "Times New Roman", Times, serif
+}
+
+
+
+div#da-error-wrapper #da-error-pin {
+    width: 38px;
+    height: 38px;
+    display: block;
+    margin: auto;
+    margin-bottom: -27px;
+    z-index: 10;
+    position: relative;
+    background: url("../images/error-pin.png") no-repeat center center
+}
+
+
+
+div#da-error-wrapper #da-error-code {
+    width: 285px;
+    height: 170px;
+    padding: 127px 16px 0 16px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+    z-index: 5;
+    line-height: 1;
+    font-size: 32px;
+    text-align: center;
+    background: url("../images/error-hanger.png") no-repeat center center;
+    -webkit-transform-origin: center top;
+    -moz-transform-origin: center top;
+    transform-origin: center top;
+    -webkit-animation: error-swing infinite 2s ease-in-out alternate;
+    -moz-animation: error-swing infinite 2s ease-in-out alternate;
+    animation: error-swing infinite 2s ease-in-out alternate
+}
+
+div#da-error-wrapper #da-error-code span {
+    font-size: 96px;
+    display: block
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes error-swing {
+    0% {
+        -webkit-transform: rotate(1deg)
+    }
+    100% {
+        -webkit-transform: rotate(-2deg)
+    }
+}
+
+@-moz-keyframes error-swing {
+    0% {
+        -moz-transform: rotate(1deg)
+    }
+    100% {
+        -moz-transform: rotate(-2deg)
+    }
+}
+
+@keyframes error-swing {
+    0% {
+        transform: rotate(1deg)
+    }
+    100% {
+        transform: rotate(-2deg)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
