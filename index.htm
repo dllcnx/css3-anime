@@ -9,21 +9,50 @@
     <script src="https://unpkg.com/vue@next"></script>
 </head>
 <style>
+    #container {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        top: 0;
+    }
+
     ul {
         list-style: none;
         font-size: 1.2rem;
     }
+
+    .tx-list {
+        width: 300px;
+    }
+
+    .tx-ifram {
+        flex: 1;
+        border: 1px solid;
+        position: relative;
+    }
+
+    iframe{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
 </style>
 
 <body>
-    <div id="tx">
-        <ol>
-            <li v-for="list in lists">
-                <div> <a :href="list.file">{{list.name}}</a></div>
-            </li>
-        </ol>
-
+    <div id="container">
+        <div class="tx-list">
+            <ol>
+                <li v-for="list in lists">
+                    <div @click="todoPage(list.url)">{{list.name}}</div>
+                </li>
+            </ol>
+        </div>
+        <div class="tx-ifram">
+            <iframe :src="pageurl"></iframe>
+        </div>
     </div>
+
 
 </body>
 <script src="./index.js"></script>
