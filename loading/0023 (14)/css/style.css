@@ -1,0 +1,72 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #2980b9, #6dd5fa, #ffffff);
+  color: #fff;
+  font-family: Averia Sans Libre, Fantasy;
+}
+
+.loading span {
+  text-transform: uppercase;
+  font-size: 42px;
+  font-weight: 600;
+  opacity: 0;
+  display: inline-block;
+  padding: 0px 20px;
+  animation: letterWave 2s infinite linear;
+}
+.loading span:nth-child(0) {
+  animation-delay: 0ms;
+}
+.loading span:nth-child(1) {
+  animation-delay: 250ms;
+}
+.loading span:nth-child(2) {
+  animation-delay: 500ms;
+}
+.loading span:nth-child(3) {
+  animation-delay: 750ms;
+}
+.loading span:nth-child(4) {
+  animation-delay: 1000ms;
+}
+.loading span:nth-child(5) {
+  animation-delay: 1250ms;
+}
+.loading span:nth-child(6) {
+  animation-delay: 1500ms;
+}
+.loading span:nth-child(7) {
+  animation-delay: 1750ms;
+}
+.loading span:nth-child(8) {
+  animation-delay: 2000ms;
+}
+.loading span:nth-child(9) {
+  animation-delay: 2250ms;
+}
+.loading span:nth-child(10) {
+  animation-delay: 2500ms;
+}
+
+@keyframes letterWave {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    padding: 0 20px;
+    opacity: .8;
+  }
+  25% {
+    transform: translateY(-50px) scale(0.8);
+    padding: 0 0px;
+    opacity: .6;
+  }
+  75% {
+    transform: translateY(50px) scale(1.5);
+    padding: 0px 40px;
+    opacity: 1;
+  }
+}
