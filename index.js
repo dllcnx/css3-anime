@@ -3,7 +3,7 @@ const HelloVueApp = {
         return {
             lists: [{
                 name: '标题特效',
-                url: 'dllcn/index.html'
+                url: 'tx/dllcn/index.html'
             }],
             pageurl: ""
         }
