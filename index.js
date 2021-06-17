@@ -1,40 +1,16 @@
+import { config } from "./config.js";
+
 const HelloVueApp = {
     data() {
         return {
-            txlists: [{
-                name: '标题特效',
-                url: 'tx/dllcn/index.html'
-            }],
-            canvaslists: [
-                {
-                    name: 'webglCanvas',
-                    url: 'canvas/webglCanvas/index.html'
-                },
-                {
-                    name: 'AnimatedBackground',
-                    url: 'canvas/AnimatedBackground/index.html'
-                },
-                {
-                    name: 'PoppingBubbles',
-                    url: 'canvas/PoppingBubbles/index.html'
-                },
-                {
-                    name: '3DBackground',
-                    url: 'canvas/3DBackground/index.html'
-                },
-                {
-                    name: '3DBackground2',
-                    url: 'canvas/3DBackground/index2.html'
-                }
-            ],
-            loadinglists: [{
-                name: 'css3-flower-loading',
-                url: 'loading/css3-flower-loading/index.html'
-            }],
+            txlists: [],
             pageurl: ""
         }
     },
     created() {
+        this.txlists = config.txlists ? config.txlists : [];
+        this.canvaslists = config.canvaslists ? config.canvaslists : [];
+        this.loadinglists = config.loadinglists ? config.loadinglists : [];
         this.pageurl = this.canvaslists[0].url
     },
     methods: {

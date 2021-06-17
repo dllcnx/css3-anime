@@ -3,8 +3,8 @@
 [DEMO](https://keiferju.github.io/css3-tx/)
 
 ### 特效
-1. [文字标题](dllcn)
-
+1. [文字标题](tx/dllcn)
+2. [404页面](tx/404_01)
 
 ### Canvas背景
 1. [AnimatedBackground](canvas/AnimatedBackground)
