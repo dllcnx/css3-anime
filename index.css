@@ -1,0 +1,184 @@
+#container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  top: 0;
+  left: 0;
+}
+
+ul {
+  list-style: none;
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+.tx-list {
+  width: 300px;
+}
+
+.tx-ifram {
+  flex: 1;
+  /* border: 1px solid; */
+  position: relative;
+}
+
+iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.tx-ol {
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.tx-ol:hover {
+  color: aqua;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+
+  0%,
+  100% {
+      transform: rotate(0)
+  }
+
+  20%,
+  60% {
+      transform: rotate(-25deg)
+  }
+
+  40%,
+  80% {
+      transform: rotate(10deg)
+  }
+}
+
+@media (max-width:500px) {
+  .github-corner:hover .octo-arm {
+      animation: none
+  }
+
+  .github-corner .octo-arm {
+      animation: octocat-wave 560ms ease-in-out
+  }
+}
+
+.is-scrollable {
+  overflow-y: auto;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: row;
+}
+.dashboard.is-full-height {
+  height: 100vh;
+}
+.dashboard-panel {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  flex: 0 0 25rem;
+  height: 100%;
+  background: #222 !important;
+}
+.dashboard-panel.left {
+  flex: 0 0 25rem;
+}
+.dashboard-panel.right {
+  flex: 0 0 25rem;
+}
+.dashboard-panel.has-thick-padding {
+  padding: 3rem 0;
+}
+.dashboard-panel.is-one-quarter {
+  flex: 0 0 25%;
+}
+.dashboard-panel.is-half {
+  flex: 0 0 50%;
+}
+.dashboard-panel.is-one-third {
+  flex: 0 0 33.3333333333%;
+}
+.dashboard-panel.is-small {
+  flex: 0 0 15rem;
+}
+.dashboard-panel.is-medium {
+  flex: 0 0 20rem;
+}
+.dashboard-panel.is-large {
+  flex: 0 0 30rem;
+}
+.dashboard-panel-header.is-centered, .dashboard-panel-content.is-centered, .dashboard-panel-footer.is-centered {
+  display: flex;
+  justify-content: center;
+}
+.dashboard-panel-header {
+  margin-bottom: 2rem;
+}
+.dashboard-panel-main {
+  flex: 1;
+}
+.dashboard-panel-footer {
+  margin-top: 2rem;
+}
+.dashboard-main {
+  display: flex;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.dashboard-main .navbar.is-fixed-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.dashboard-main .footer {
+  flex: 1;
+}
+
+/*# sourceMappingURL=bulma-dashboard.css.map */
+
+.section{
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.footer{
+  padding: 0;
+}
+img{
+  width: 30%;
+}
+
+.menu-label{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1rem 0 !important;
+  color: #3298dc;
+}
+
+.menu-list{
+  font-size: 1rem;
+
+}
+.menu-ol{
+  padding-left: 3rem;
+}
+
+.menu-list a{
+  color: #fff;
+}
+
+a{
+  color: #fff;
+}
