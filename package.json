@@ -1,0 +1,16 @@
+{
+  "name": "css3-anime",
+  "version": "1.0.0",
+  "description": "[DEMO](https://keiferju.github.io/css3-anime/)",
+  "main": "config.js",
+  "scripts": {
+    "build": "node ./build/build.js",
+    "deploy": "node ./build/deploy.js"
+  },
+  "keywords": [],
+  "author": "DLLCNX <dllcnx@foxmail.com> (https://dllcnx.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
