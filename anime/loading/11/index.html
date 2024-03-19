@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>demo2</title>
+    <link rel="stylesheet" href="kinerloader2.css"/>
+</head>
+
+<style>
+
+    * {
+        padding: 0px;
+        margin: 0;
+
+    }
+    body{
+        background-color: #f5f5f5;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 1000px;
+    }
+
+    .box {
+        width: 550px;
+        margin: 20px auto;
+    }
+    .ceil{
+        display: inline-block;
+        padding: 10px;
+        margin-right: 10px;
+    }
+    .ceil strong{
+        display: block;
+        width: 60px;
+        text-align: center;
+        margin-top: 15px;
+        margin-left: 8px;
+        color: #e0e0e0;
+
+    }
+    .ceil.title strong{
+        background: url("bg.jpg");
+        background-position: center;
+        line-height: 40px;
+        height: 40px;
+        width: 60px;
+        display: inline-block;
+        -webkit-box-shadow: inset 0 0 2px #fff, 0 0 5px #eee;
+        -moz-box-shadow: inset 0 0 2px #fff, 0 0 5px #eee;
+        box-shadow: inset 0 0 2px #fff, 0 0 5px #eee;
+    }
+
+
+</style>
+
+<body>
+<h1 style="width: 100%; text-align: center; color: #fff; margin-top: 50px; font-family: Helvetica; font-style: italic;">KINER LOADER<sup style="font-size: 14px;">—互动派UED[KINER]</sup></h1>
+<div class="box">
+    <span class="ceil title"><strong>500ms</strong></span>
+    <span class="ceil title"><strong>1s</strong></span>
+    <span class="ceil title"><strong>2s</strong></span>
+    <span class="ceil title"><strong>3s</strong></span>
+    <span class="ceil title"><strong>4s</strong></span>
+
+    <!--
+
+        使用说明:{
+
+            1.引入样式表kinerloader2.css
+            2.在页面需要添加进度条的地方添加以下代码:[
+
+                <div class="loader duration-500ms-before">
+                    <a href="javascript:;">100%</a>
+                </div>
+
+            ](注:【其中div为进度条主题，a为显示进度的区域】
+            【类名解析:{
+                loader          --所有进度条必须加上此类名，为进度条基础类其下有几个颜色分类如下:
+                loader-red      --红色默认圆形进度条
+                loader-gray     --灰色默认圆形进度条
+                loader-green    --绿色默认圆形进度条
+                loader-orange   --橙色默认圆形进度条
+                loader2-red     --红色样式2圆形进度条
+                loader3-gray    --灰色样式3圆形进度条
+                loader4-green   --绿色样式4圆形进度条
+                loader5-orange  --橙色样式5圆形进度条
+
+                duration-[[300,500]m,1,2,3,4,5]s-before    --进度条动画持续事件配置，分别有（300ms,500ms,1s,2s,3s,4s,5s）其中，loader1,loader2必须用此类事件配置类
+
+                duration-[[300,500]m,1,2,3,4,5]s-after     --进度条动画持续事件配置，分别有（300ms,500ms,1s,2s,3s,4s,5s）其中，loader3,loader4,loader5必须用此类事件配置类
+            }
+            】);
+
+            具体使用方法详见下面的html源码;
+
+        }
+
+    -->
+
+    <!--第一组 start-->
+    <span class="ceil">
+        <div class="loader duration-500ms-before">
+            <a href="javascript:;">100%</a>
+        </div>
+        <strong>default</strong>
+    </span>
+    <span class="ceil">
+        <div class="loader loader-red duration-1s-before">
+            <a href="javascript:;">100%</a>
+        </div>
+        <strong>red</strong>
+    </span>
+    <span class="ceil">
+        <div class="loader loader-gray duration-2s-before">
+            <a href="javascript:;">100%</a>
+        </div>
+        <strong>gray</strong>
+    </span>
+    <span class="ceil">
+        <div class="loader loader-green duration-3s-before">
+            <a href="javascript:;">100%</a>
+        </div>
+        <strong>green</strong>
+    </span>
+    <span class="ceil">
+        <div class="loader loader-orange duration-4s-before">
+            <a href="javascript:;">100%</a>
+        </div>
+        <strong>orange</strong>
+    </span>
+
+
+    <!--第一组 end-->
+
+    <!--第二组 start-->
+    <span class="ceil">
+        <div class="loader loader2 duration-500ms-before">
+            <a href="javascript:;">100%</a>
+        </div>
+        <strong>loader2</strong>
+    </span>
+    <span class="ceil">
+        <div class="loader loader2 loader2-red  duration-1s-before">
+            <a href="javascript:;">100%</a>
+        </div>
+        <strong>loader2</strong>
+    </span>
+    <span class="ceil">
+        <div class="loader loader2 loader2-gray duration-2s-before">
+            <a href="javascript:;">100%</a>
+        </div>
+        <strong>loader2</strong>
+    </span>
+    <span class="ceil">
+        <div class="loader loader2 loader2-green duration-3s-before">
+            <a href="javascript:;">100%</a>
+        </div>
+        <strong>loader2</strong>
+    </span>
+    <span class="ceil">
+        <div class="loader loader2 loader2-orange duration-4s-before">
+            <a href="javascript:;">100%</a>
+        </div>
+        <strong>loader2</strong>
+    </span>
+
+    <!--第二组 end-->
+
+    <!--第三组 start-->
+    <span class="ceil">
+        <div class="loader loader3 duration-500ms-after">
+            <a href="javascript:;">100%</a>
+        </div>
+        <strong>loader3</strong>
+    </span>
+
+    <span class="ceil">
+        <div class="loader loader3 loader3-red duration-2s-after">
+            <a href="javascript:;">100%</a>
+        </div>
+        <strong>loader3</strong>
+    </span>
+
+    <span class="ceil">
+        <div class="loader loader3 loader3-gray duration-3s-after">
+            <a href="javascript:;">100%</a>
+        </div>
+        <strong>loader3</strong>
+    </span>
+
+    <span class="ceil">
+        <div class="loader loader3 loader3-green duration-4s-after">
+            <a href="javascript:;">100%</a>
+        </div>
+        <strong>loader3</strong>
+    </span>
+
+    <span class="ceil">
+        <div class="loader loader3 loader3-orange duration-5s-after">
+            <a href="javascript:;">100%</a>
+        </div>
+        <strong>loader3</strong>
+    </span>
+
+    <!--第三组 end-->
+
+
+    <!--第四组 start-->
+    <span class="ceil">
+        <div class="loader loader4 duration-500ms-after">
+            <a href="javascript:;">100%</a>
+        </div>
+        <strong>loader4</strong>
+    </span>
+
+    <span class="ceil">
+        <div class="loader loader4 loader4-red duration-1s-after">
+            <a href="javascript:;">100%</a>
+        </div>
+        <strong>loader4</strong>
+    </span>
+
+    <span class="ceil">
+        <div class="loader loader4 loader4-gray duration-2s-after">
+            <a href="javascript:;">100%</a>
+        </div>
+        <strong>loader4</strong>
+    </span>
+
+    <span class="ceil">
+        <div class="loader loader4 loader4-green duration-3s-after">
+            <a href="javascript:;">100%</a>
+        </div>
+        <strong>loader4</strong>
+    </span>
+
+    <span class="ceil">
+        <div class="loader loader4 loader4-orange duration-4s-after">
+            <a href="javascript:;">100%</a>
+        </div>
+        <strong>loader4</strong>
+    </span>
+
+
+    <!--第四组 end-->
+
+    <!--第五组 start-->
+    <span class="ceil">
+        <div class="loader loader5 duration-500ms-after">
+            <div class="main"></div>
+            <div class="pointer duration-500ms"></div>
+            <a href="javascript:;">100%</a>
+        </div>
+        <strong>loader5</strong>
+    </span>
+
+    <span class="ceil">
+        <div class="loader loader5 loader5-red duration-1s-after">
+            <div class="main"></div>
+            <div class="pointer duration-1s"></div>
+            <a href="javascript:;">100%</a>
+        </div>
+        <strong>loader5</strong>
+    </span>
+
+    <span class="ceil">
+        <div class="loader loader5 loader5-gray duration-2s-after">
+            <div class="main"></div>
+            <div class="pointer duration-2s"></div>
+            <a href="javascript:;">100%</a>
+        </div>
+        <strong>loader5</strong>
+    </span>
+
+    <span class="ceil">
+        <div class="loader loader5 loader5-green duration-3s-after">
+            <div class="main"></div>
+            <div class="pointer duration-3s"></div>
+            <a href="javascript:;">100%</a>
+        </div>
+        <strong>loader5</strong>
+    </span>
+
+    <span class="ceil">
+        <div class="loader loader5 loader5-orange duration-4s-after">
+            <a href="javascript:;">100%</a>
+        </div>
+        <strong>loader5</strong>
+    </span>
+    <!--第五组 end-->
+</div>
+
+
+</body>
+</html>

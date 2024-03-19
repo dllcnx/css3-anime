@@ -1,0 +1,128 @@
+
+<!DOCTYPE HTML>
+<html xmlns:fb="http://ogp.me/ns/fb#" itemscope itemtype="http://schema.org/Blog">
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>HTML5/CSS3鼠标滑过图片滤镜动画效果DEMO演示</title>
+        <meta property="og:title" content="Adipoli 1.0"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="http://jobyj.in/adipoli"/>
+        <meta property="og:image" content="http://jobyj.in/adipoli/img/adipoli.png"/>
+        <meta property="og:site_name" content="jobyj"/>
+        <meta property="og:description"
+              content="An amazing jQuery image hover plugin. 20+ transition effects."/>
+        <META NAME="Description" CONTENT="An amazing free to use jQuery image hover plugin with more than 20 transition effects">
+        <meta itemprop="name" content="Adipoli jQuery Image Hover Effects">
+        <meta itemprop="description" content="An amazing jQuery image hover plugin. 20+ transition effects.">
+        <meta itemprop="image" content="http://jobyj.in/adipoli/img/adipoli.png">
+        <meta property="fb:admins" content="100000682718088"/>
+        <link href="css/demo.css" rel="stylesheet" type="text/css"/>
+        <link href="css/adipoli.css" rel="stylesheet" type="text/css"/>
+        <link rel="shortcut icon" href="http://jobyj.in/favicon.ico" />
+        <script src="js/jquery-1.7.1.js" type="text/javascript"></script>
+        <script src="js/jquery.adipoli.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            
+            $(function(){
+                $('.row1').adipoli({
+                    'startEffect' : 'normal',
+                    'hoverEffect' : 'popout'
+                });
+                $('.row2').adipoli({
+                    'startEffect' : 'overlay',
+                    'hoverEffect' : 'sliceDown'
+                });
+                $('.row3').adipoli({
+                    'startEffect' : 'transparent',
+                    'hoverEffect' : 'boxRandom'
+                });
+                $('.row4').adipoli({
+                    'startEffect' : 'overlay',
+                    'hoverEffect' : 'foldLeft'
+                });
+            $('.row5').adipoli({
+                'startEffect' : 'transparent',
+                'hoverEffect' : 'boxRainGrowReverse'
+            });
+            $('.row6').adipoli({
+                'startEffect' : 'grayscale',
+                'hoverEffect' : 'normal'
+            });
+            $('#adipoli-download').fadeTo('slow',1);
+        });
+            
+        </script>
+    </head>
+    <body>
+	
+        <div id="fb-root">
+            <!-- The JS SDK requires the fb-root element in order to load properly. -->
+        </div>
+        <div id="container">
+            <div id="overview"></div>
+
+            <div class="effect-container">
+                <div class="effect-details">startEffect : grayscale, hoverEffect : normal(For HTML5 Browsers)</div>
+                <img class="img-style row6" src="img/gallery-images/6_1.png"/>
+                <img class="img-style row6" src="img/gallery-images/6_2.png"/>
+                <img class="img-style row6" src="img/gallery-images/6_3.png"/>
+            </div>
+			
+<div style="text-align:center;clear:both;">
+<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+<script src="/follow.js" type="text/javascript"></script>
+</div>
+
+            <div class="effect-container">
+                <div class="effect-details">startEffect : normal, hoverEffect : popout</div>
+                <img class="img-style row1" src="img/gallery-images/1_1.png"/>
+                <img class="img-style row1" src="img/gallery-images/1_2.png"/>
+                <img class="img-style row1" src="img/gallery-images/1_3.png"/>
+            </div>
+
+
+            <div class="effect-container">
+                <div class="effect-details">startEffect : overlay, hoverEffect : sliceDown</div>
+                <img class="img-style row2" src="img/gallery-images/2_1.png"/>
+                <img class="img-style row2" src="img/gallery-images/2_2.png"/>
+                <img class="img-style row2" src="img/gallery-images/2_3.png"/>
+            </div>
+			
+            <div class="effect-container">
+                <div class="effect-details">startEffect : transparent, hoverEffect : boxRandom</div>
+                <img class="img-style row3" src="img/gallery-images/3_1.png"/>
+                <img class="img-style row3" src="img/gallery-images/3_2.png"/>
+                <img class="img-style row3" src="img/gallery-images/3_3.png"/>
+            </div>
+            <div class="effect-container">
+                <div class="effect-details">startEffect : overlay, hoverEffect : foldLeft</div>
+                <img class="img-style row4" src="img/gallery-images/4_1.png"/>
+                <img class="img-style row4" src="img/gallery-images/4_2.png"/>
+                <img class="img-style row4" src="img/gallery-images/4_3.png"/>
+            </div>
+            <div class="effect-container">
+                <div class="effect-details">startEffect : transparent, hoverEffect : boxRainGrowReverse</div>
+                <img class="img-style row5" src="img/gallery-images/5_1.png"/>
+                <img class="img-style row5" src="img/gallery-images/5_2.png"/>
+                <img class="img-style row5" src="img/gallery-images/5_3.png"/>
+            </div>
+            
+            
+           
+            <script type="text/javascript">
+            $(document).ready(function(){
+                $('#adipoli-download').fadeTo('fast', 0.10);
+                $('#adipoli-download').click(function(){
+                    if($(this).attr('href')=='#download')
+                    {
+                        alert('Please click like button to enable download link.');
+                    }
+                    else
+                    {
+                        _gaq.push(['_trackPageview', 'adipoli.zip-v2']);
+                    }
+                });
+            });
+            </script>
+    </body>
+</html>

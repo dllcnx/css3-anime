@@ -1,0 +1,94 @@
+.dllcn-font {
+	width: 400px;
+	height: 230px;
+	border: 10px solid white;
+	position: relative;
+	cursor: pointer;
+}
+
+.dllcn-font div {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	font-size: 100px;
+	text-align: center;
+	line-height: 230px;
+	font-family: 黑体;
+	font-weight: bold;
+}
+
+.first {
+	color: white;
+}
+
+.dllcn-font .second {
+	width: 0px;
+	position: absolute;
+	overflow: hidden;
+	background: white;
+	transition: 4s;
+	animation: one 5s ease-in-out 1;
+	animation-fill-mode: both;
+}
+
+.dllcn-font .seconds {
+	color: rgb(196, 14, 14);
+	width: 400px;
+}
+
+@keyframes one {
+	0% {
+		width: 0px;
+	}
+
+	25% {
+		width: 50px;
+	}
+
+	50% {
+		width: 150px;
+	}
+
+	100% {
+		width: 400px;
+	}
+}
+
+.dllcn-font .three {
+	width: 0px;
+	background: rgb(224, 9, 9);
+	overflow: hidden;
+	right: 0;
+	animation: two 5s linear 1;
+	animation-fill-mode: both;
+	animation-delay: 5s;
+}
+
+@keyframes two {
+	0% {
+		width: 0px;
+	}
+
+	100% {
+		width: 200px;
+	}
+}
+
+.dllcn-font .threes {
+	width: 400px;
+	color: white;
+	position: absolute;
+	animation: twos 5s linear 1;
+	animation-fill-mode: both;
+	animation-delay: 5s;
+}
+
+@keyframes twos {
+	0% {
+		left: -400px;
+	}
+
+	100% {
+		left: -200px;
+	}
+}
