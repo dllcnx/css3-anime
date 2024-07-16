@@ -1,0 +1,77 @@
+<!--
+ * @Author: DLLCNX dllcnx@foxmail.com
+ * @Date: 2024-07-16 16:34:05
+ * @LastEditors: DLLCNX dllcnx@foxmail.com
+ * @LastEditTime: 2024-07-16 17:00:26
+ * @FilePath: /css3-anime/anime/login/Login&register2/index.html
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>登录界面</title>
+	<link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+	<div class="box">
+		<div class="content">
+			<div class="login">
+				<div class="mask">
+					<div class="login-content">
+						<h2>登录</h2>
+						<span class="span-content">欢迎来到登录界面，您可以通过这个界面登录，也可以通过其他方式实现登录</span>
+						<div class="logo">
+							<img src="./assets/QQ.png" alt="">
+							<span>使用QQ登录</span>
+						</div>
+						<div class="input-content">
+							<input type="text" placeholder="账号:">
+							<input type="password" placeholder="密码:">
+						</div>
+						<button class="login-btn">登录</button>
+						<div class="other-tips">
+							<span class="other-span">还没有账号？</span>
+							<span class="blue">注册</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		window.addEventListener('load', function () {
+			let num = 1
+			function changeBackground() {
+				if (num % 2 == 0) {
+					document.querySelector('.logo').style.backgroundColor = 'rgb(248, 182, 217)';
+					document.querySelector('.login-btn').style.backgroundColor = 'rgb(242, 144, 196)'
+				} else {
+					document.querySelector('.logo').style.backgroundColor = 'rgb(81, 86, 226)';
+					document.querySelector('.login-btn').style.backgroundColor = 'rgb(70, 54, 220)'
+				}
+				if (num == 4) {
+					num = 0
+					document.querySelector('.logo').style.backgroundColor = 'rgb(54, 59, 197)';
+					document.querySelector('.login-btn').style.backgroundColor = 'rgb(70, 54, 220)'
+				} else {
+					num++
+					document.querySelector('.login').style.background = 'url(./assets/bg' + num + '.png) no-repeat'
+					document.querySelector('.login').style.backgroundPosition = 'center'
+					document.querySelector('.login').style.backgroundSize = 'cover'
+					return changeBackground
+				}
+				return changeBackground
+			}
+			// 定时器 可以设置切换快慢
+			setInterval(changeBackground(), 3000)
+		})
+
+	</script>
+</body>
+
+</html>

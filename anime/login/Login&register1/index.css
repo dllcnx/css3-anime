@@ -1,0 +1,118 @@
+*{
+	padding: 0;
+	margin: 0;
+} 
+.box {
+	width: 100vw;
+  height: 100vh;
+  /* background-color: rgb(29, 67, 89); */
+	background: rgb(66,60,166);
+  background: linear-gradient(0deg, rgba(66,60,166,1) 0%, 
+	rgba(0,112,238,0.8287729642638305) 61%, 
+	rgba(0,195,235,0.9408177821910014) 100%);
+	overflow: hidden;
+	
+}
+.content {
+	width: 80%;
+	height: 90%;
+	position: relative;
+	transform: translate(12%, 5%);
+	background:url(./assets/login_two.jpg) no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	border-radius: 15px;
+	/* transform: translateY(10%); */
+}
+.content .login-warpper{
+	width: 350px;
+	height: 100%;
+	position: absolute;
+	right: 10%;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.login-warpper h1{
+	margin-left: 70px;
+	text-align: center;
+	font-size: 45px;
+	color: rgb(88, 121, 146);
+	margin-bottom: 40px;
+}
+.login-from .phone{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.span-phone {
+	font-size: 14px;
+	color: rgb(81, 100, 115);
+	font-weight: 200;
+}
+
+.input-phone{
+	border: 1px solid rgb(214, 222, 228);
+	width: 130%;
+  padding: 10px;
+	outline: none;
+	border-radius: 20px;
+	margin-bottom: 15px;
+}
+.input-item{
+	position: relative;
+
+}
+.icon img{
+	position: absolute;
+	top: 10px;
+	right: -35%;
+	width: 20px;
+	height: 20px;
+}
+
+.login-btn {
+	width: 140%;
+	padding: 10px;
+	border-radius: 40px;
+  color: #fff;
+  border: 0;
+  font-weight: 100;
+  margin-top: 10px;
+  cursor: pointer;
+	background-color: rgb(59, 72, 89);
+	font-size: 20px;
+}
+
+.divider {
+	margin-top: 15px;
+	display: flex;
+	margin-left: 20%;
+	align-items: center;
+}
+.divider .line {
+	display: inline-block;
+	width: 50px;
+  margin-right: 5px;
+	border: 1px solid #999 ;
+}
+.divider .line:last-child {
+ margin-left: 5px;
+}
+
+.other-login {
+	display: flex;
+	justify-content: center;
+	margin: 15px 0;
+	margin-left: 15%;
+}
+
+.other-login-qq img,.other-login-vx img{
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+	margin-left: 15px;
+	border: 1px solid #e1dcdc;
+}
