@@ -1,0 +1,123 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.box {
+	width: 100vw;
+	height: 100vh;
+	background-color: #efefef;
+}
+.content{
+	width: 85vw;
+	height: 85vh;
+	border-radius: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.content .login {
+	width: 100%;
+	height: 100%;
+	background: url(./assets/bg1.png) no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 20px;
+	position: relative;
+	transition: .5s;
+}
+
+.content .login .mask {
+	width: 370px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: rgba(255,255, 255, .5);
+	box-shadow: 0 0 20px rgba(255,255,255,.7);
+}
+
+.mask .login-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.login-content h2 {
+   font-size: 35px;
+	 color: rgb(210, 29, 83);
+	 margin-top: 10%;
+}
+
+.login-content .span-content {
+	font-size: 15px;
+	color: rgb(79, 78, 78);
+	margin: 10px 10px;
+}
+
+.logo {
+	width: 90%;
+	height: 50px;
+	border-radius: 5px;
+	background-color: rgb(248, 182, 217);
+	margin: 15px 0;
+	text-align: center;
+	line-height: 50px;
+	transition: 0.5s;
+}
+
+.logo img {
+	width: 35px;
+	height: 35px;
+	vertical-align: middle;
+}
+
+.login-content .input-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin: 20px 0;
+}
+
+.input-content input {
+	width: 320px;
+	height: 45px;
+	margin: 10px 0;
+	font-size: 20px;
+	text-indent: 10px;
+	color: rgb(45, 45, 45);
+	border: 0;
+	border-radius: 5px;
+}
+.input-content input:focus {
+	outline: none;
+}
+.input-content input::placeholder {
+	color: #000;
+	font-weight: 600;
+}
+
+.login-content .login-btn {
+	width: 320px;
+	height: 45px;
+	background-color: rgb(242, 144, 196);
+	color: #efefef;
+	font-size: 24px;
+	font-weight: 500;
+	border: 0;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+
+.login-content .other-tips{
+	margin-top: 15px;
+	color: #333;
+}
+
+.login-content .other-tips .blue {
+	color: rgb(31, 182, 241);
+	/* color: rgb(81, 86, 226); */
+	font-weight: 600;
+	font-size: 24px;
+}

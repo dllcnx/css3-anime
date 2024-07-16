@@ -1,6 +1,7 @@
 # 前端特效收集
+来源于互联网的css特效整理
 
-[DEMO](https://keiferju.github.io/css3-anime/)
+[更多DEMO](https://dllcnx.github.io/css3-anime/)
 
 ### 特效
 1. [文字标题](anime/font/01)

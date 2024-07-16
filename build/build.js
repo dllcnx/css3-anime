@@ -2,19 +2,22 @@
  * @Author: DLLCNX dllcnx@foxmail.com
  * @Date: 2024-03-19 10:39:08
  * @LastEditors: DLLCNX dllcnx@foxmail.com
- * @LastEditTime: 2024-03-19 11:17:41
- * @FilePath: /css3-anime/deal.js
+ * @LastEditTime: 2024-07-16 16:54:39
+ * @FilePath: /css3-anime/build/build.js
  * @Description: 
  */
 // 获取文件目录结构
 const fs = require('fs');
 const path = require('path');
+// 排除目录
+const exclude = ['.DS_Store', '.DS_store'];
 const deal = {
     // 获取文件目录结构
     getDirTree: function (dir, isStop = false) {
         let tree = [];
         let files = fs.readdirSync(dir);
         files.forEach(function (file) {
+            if(exclude.includes(file)) return;
             let stats = fs.statSync(path.join(dir, file));
             if (stats.isFile()) {
                 tree.push(file);

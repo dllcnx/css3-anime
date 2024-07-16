@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>登录界面</title>
+	<link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+	<div class="content right-panel-active">
+		<div class="content-singUp content-from">
+			<!-- 注册 -->
+			<form action="javascript:;" class="form" id="form1">
+				<h2 class="from-title from-title1">注&nbsp;册</h2>
+				<input type="text" placeholder="账号:" class="input">
+				<input type="email" placeholder="邮箱:" class="input">
+				<div class="input-item">
+					<input type="password" class="input input0" placeholder="密码:">
+					<span class="icon icon0"><img src="./assets/眼睛-闭眼.png" alt="" id="img0"></span>
+				</div>
+				<div class="input-item">
+					<input type="password" class="input input1" placeholder="确认密码:"> 
+					<span class="icon icon1"><img src="./assets/眼睛-闭眼.png" alt="" id="img1"></span>
+				</div>
+				<button class="btn">注册</button>
+			</form>
+		</div>
+
+		<!-- 登录 -->
+		<div class="content-login content-from">
+			<form action="javascript:;" id="form2" class="form">
+				<h2 class="from-title">登&nbsp;录</h2>
+				<input type="text" placeholder="用户名" class="input">
+				<div class="input-item">
+					<input type="password" class="input2 input" placeholder="密  码">
+					<span class="icon2 icon"><img src="./asset/Login3/眼睛-闭眼.png" alt="" id="img2"></span>
+				</div>
+				<a href="#" class="link">找回密码</a>
+				<button class="btn">登录</button>
+			</form>
+		</div>
+
+		<div class="container_overlay">
+			<div class="overlay">
+				<div class="overlay_panel overlay--left">
+					<button class="btn" id="signIn">Sign In</button>
+				</div>
+				<div class="overlay_panel overlay--right">
+					<button class="btn" id="signUp">Sign Up</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+
+		function getClass(n) {
+			return document.querySelector(n)
+		}
+		const signInBtn = getClass("#signIn");
+		const signUpBtn = getClass("#signUp");
+		const firstForm = getClass("#form1");
+		const secondForm = getClass("#form2");
+		const container = document.querySelector(".content");
+
+		signInBtn.addEventListener("click", () => {
+			container.classList.remove("right-panel-active");
+		});
+
+		signUpBtn.addEventListener("click", () => {
+			container.classList.add("right-panel-active");
+		});
+
+		firstForm.addEventListener("submit", (e) => e.preventDefault());
+		secondForm.addEventListener("submit", (e) => e.preventDefault());
+		let eye = getClass('.icon0')
+		let img = getClass('#img0')
+		let psd = getClass('.input0')
+		let psd1 = getClass('.input1')
+		let eye1 = getClass('.icon1')
+		let img1 = getClass('#img1')
+		let eye2 = getClass('.icon2')
+		let img2 = getClass('#img2')
+		let psd2 = getClass('.input2')
+		let flag = false
+		function doEye(input, img) {
+			if (!flag) {
+				img.src = "./asset/Login&register1/眼睛.png"
+				input.type = 'text'
+				flag = true
+			}
+			else if (flag) {
+				img.src = "./asset/Login&register1/眼睛-闭眼.png"
+				input.type = 'password'
+				flag = false
+			}
+		}
+
+		eye.onclick = function () {
+			window.doEye(psd, img)
+		}
+		eye1.onclick = function () {
+			window.doEye(psd1, img1)
+		}
+		eye2.onclick = function () {
+			window.doEye(psd2, img2)
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.box {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+.centent {
+	width: 100%;
+	height: 100%;
+	background:url(./assets/login_bg_phone.png) no-repeat;
+	background-position:  center;
+	background-size: 100% 100%;
+	display: flex;
+ flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.centent h1 {
+	text-align: center;
+	font-size: 30px;
+	color: rgb(252, 254, 255);
+	margin-top: 15%;
+}
+
+.login-from{
+	margin-top: 10%;
+	/* margin-left: 7%; */
+}
+.login-phone {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	color: #d1caca;
+	font-size: 16px;
+}
+.login-item {
+	text-indent: 20px;
+}
+#phone,#password {
+	width: 110%;
+	height: 40px;
+	background-color: transparent;
+	border-radius: 20px;
+	border: 1px solid #999;
+	outline: none;
+	text-indent: 20px;
+	color: #fff;
+	font-size: 18px;
+	margin: 15px 0;
+}
+.login-password{
+	position: relative;
+}
+
+.eye img {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 30px;
+	right: 0;
+}
+
+.login-btn{
+	width: 110%;
+	padding: 10px;
+	color: #efff;
+	border-radius: 20px;
+	background-color: #eb5f5d;
+	border: 0;
+	font-size: 18px;
+}
+
+.divider{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translateX(5%);
+	margin-top: 5%;
+	color: #efefff;
+}
+.divider .line {
+	width: 50px;
+	border: 1px solid #999;
+	margin-right: 10px;
+}
+
+.divider .line:last-child{
+	margin-left: 5px;
+}
+
+.other-login {
+	display: flex;
+	justify-content: center;
+}
+
+.other-login-qq img,.other-login-vx img{
+	height: 50px;
+	width: 50px;
+	margin: 10px;
+	padding: 5px;
+	border-radius: 10px;
+	border: 1px solid #efefff;
+}
